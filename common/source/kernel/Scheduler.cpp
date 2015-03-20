@@ -252,8 +252,7 @@ void Scheduler::printUserSpaceTraces()
       }
       else
       {
-        debug(USERTRACE, "Thread <%s> blocked in kernel, printing kernel backtrace instead\n", t->getName());
-        t->printBacktrace();
+        t->printUserBacktrace();
       }
     }
   }
